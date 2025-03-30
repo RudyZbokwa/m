@@ -1,7 +1,0 @@
-/root-directory
-  |-- /docs
-    |-- _config.yml
-    |-- index.md
-    |-- _posts/
-    |-- /assets/
-  |-- /_site (generowane automatycznie po zbudowaniu)
