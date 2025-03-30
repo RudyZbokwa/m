@@ -1,42 +1,7 @@
-mkdir docs
 /root-directory
   |-- /docs
     |-- _config.yml
     |-- index.md
     |-- _posts/
-    |-- /assets
-  |-- /_site (po zbudowaniu)
-source: docs
-destination: docs/_site
-name: Jekyll Pages
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '2.7'
-      - name: Install dependenciesgit add .
-git commit -m "Dodano folder docs"
-git push
-
-        run: |
-          gem install bundler
-          bundle install
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
-        working-directory: ./docs  # Ustaw folder źródłowy na docs
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: ./docs/_site  # Wskazujemy na _site w folderze docs
-            bundle install
-bundle exec jekyll build --source docs
-
+    |-- /assets/
+  |-- /_site (generowane automatycznie po zbudowaniu)
