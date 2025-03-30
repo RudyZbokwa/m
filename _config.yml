@@ -1,0 +1,9 @@
+title: mobywatel
+description: "Opis mojej strony"
+baseurl: "" 
+url: "https://twojadomena.github.io" 
+author:
+  name: "Twoje imię"
+  email: "twojemail@example.com"
+
+theme: jekyll-theme-primer 
